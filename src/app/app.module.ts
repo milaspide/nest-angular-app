@@ -9,6 +9,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { GestioneUtenzeComponent } from './pages/gestione-utenze/gestione-utenze.component';
+import { GestioneRisorseComponent } from './pages/gestione-risorse/gestione-risorse.component';
+import { AmministrazioneProgettiComponent } from './pages/amministrazione-progetti/amministrazione-progetti.component';
+import { GestioneCarichiComponent } from './pages/gestione-carichi/gestione-carichi.component';
+import { ReportComponent } from './pages/report/report.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +22,11 @@ import { MatSliderModule } from '@angular/material/slider';
     FooterComponent,
     HomeComponent,
     FeaturesComponent,
+    GestioneUtenzeComponent,
+    GestioneRisorseComponent,
+    AmministrazioneProgettiComponent,
+    GestioneCarichiComponent,
+    ReportComponent,
   ],
   imports: [
     BrowserModule,
