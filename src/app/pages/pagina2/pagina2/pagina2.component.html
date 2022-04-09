@@ -1,0 +1,22 @@
+<div><table [cellSpacing]="20">
+  <tr>
+      <td>
+        <div *ngFor = "let record of data">
+          {{record.title}} -- {{record.description}}
+        </div>
+      </td>
+      <td><button mat-raised-button color="primary"
+        [matBadge]="occorrenze" matBadgePosition="before" matBadgeColor="accent" (click)="aggiungiOccorrenze()">
+      Action
+    </button></td>
+  </tr>                                                   
+</table>
+</div>
+
+
+
+
+
+
+
+

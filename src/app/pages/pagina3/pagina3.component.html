@@ -1,0 +1,13 @@
+<div [ngSwitch]="buttonValue">
+    <p *ngSwitchCase="'button1'" >BUTTON1 Clicked</p>
+    <p *ngSwitchCase="'button2'" >BUTTON2 Clicked</p>
+    <p *ngSwitchCase="'button3'" >BUTTON3 Clicked</p>
+    <p *ngSwitchCase="'button4'" >BUTTON4 Clicked</p>
+    <p *ngSwitchDefault>NO BUTTON Clicked</p>
+  </div>
+
+  <div><button (click)="buttonPush(1)">BUTTON 1</button></div>
+  <div><button (click)="buttonPush(2)">BUTTON 2</button></div>
+  <div><button (click)="buttonPush(3)">BUTTON 3</button></div>
+  <div><button (click)="buttonPush(4)">BUTTON 4</button></div>
+  

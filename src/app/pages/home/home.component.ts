@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   constructor() {}
+
+  buttonDisabled = false;
+  @Input() buttonText = 'Alert corso angular';
 
   public stampaTxt(): void {
     alert('ciao questo è il corso angular');

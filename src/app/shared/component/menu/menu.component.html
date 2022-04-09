@@ -1,0 +1,27 @@
+<div><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/pagina1']">
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <span>Direttiva ngIf</span>
+    </button>
+    <button mat-menu-item [routerLink]="['/pagina2']">
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <span>Direttiva ngFor</span>
+    </button>
+    <button mat-menu-item [routerLink]="['/pagina3']">
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <span>Direttiva ngSwitch</span>
+    </button>
+    <button mat-menu-item [routerLink]="['/pagina4']">
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <span>Direttiva ngStyle</span>
+    </button>
+    <button mat-menu-item [routerLink]="['/pagina5']">
+      <mat-icon>arrow_forward_ios</mat-icon>
+      <span>Direttiva ngClass</span>
+    </button>
+  </mat-menu>
+</div>
+<div><h1>My App</h1></div>

@@ -1,0 +1,15 @@
+
+<div><table [cellSpacing]="20">
+    <tr>
+        <td>
+            <mat-progress-spinner
+                class="example-margin"
+                [color]="color"
+                [mode]="mode"
+                [value]="value" *ngIf="showProgressSpinner">
+            </mat-progress-spinner>
+        </td>
+        <td><button (click)="hideProgressSpinner()">{{buttonText}}</button></td>
+    </tr>                                                   
+</table>
+</div>

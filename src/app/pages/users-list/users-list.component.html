@@ -1,0 +1,6 @@
+
+<div *ngIf="getListaUtenti">
+  <p *ngFor="let utente  of getListaUtenti.data;">
+      {{utente.employee_name}} - {{utente.employee_salary}}
+  </p>
+</div>
