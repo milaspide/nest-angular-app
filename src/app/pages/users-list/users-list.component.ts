@@ -13,7 +13,7 @@ export class UsersListComponent implements OnInit, OnDestroy {
   public getListaUtenti: GetListaUtentiResponse;
 
   constructor(private service: GlobalService) {
-    this.subscription.add(
+    /*     this.subscription.add(
       this.service.getListaUtenti().subscribe(
         (response: GetListaUtentiResponse) => {
           this.getListaUtenti = response;
@@ -22,6 +22,14 @@ export class UsersListComponent implements OnInit, OnDestroy {
           console.log('error', error);
         }
       )
+    ); */
+    this.subscription = this.service.getListaUtenti().subscribe(
+      (response: GetListaUtentiResponse) => {
+        this.getListaUtenti = response;
+      },
+      (error: GetListaUtentiResponse) => {
+        console.log('error', error);
+      }
     );
   }
 

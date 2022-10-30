@@ -25,6 +25,7 @@ import { Pagina3Component } from './pages/pagina3/pagina3.component';
 import { Pagina4Component } from './pages/pagina4/pagina4.component';
 import { Pagina5Component } from './pages/pagina5/pagina5.component';
 import { UsersListComponent } from './pages/users-list/users-list.component';
+import { FileUploadComponent } from './shared/component/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { UsersListComponent } from './pages/users-list/users-list.component';
     Pagina4Component,
     Pagina5Component,
     UsersListComponent,
+    FileUploadComponent,
   ],
   imports: [
     BrowserModule,
