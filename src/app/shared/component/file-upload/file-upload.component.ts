@@ -1,13 +1,13 @@
 import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
+import { DialogService, DynamicDialogRef } from 'primeng/api';
 import { Subscription } from 'rxjs';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { DocumentService } from '../../service/document.service';
 
 @Component({
   selector: 'file-upload',
   templateUrl: 'file-upload.component.html',
-  styleUrls: ['file-upload.component.scss'],
+  styleUrls: ['file-upload.component.css'],
 })
 export class FileUploadComponent {
   @Input('required-file-type')
@@ -41,9 +41,9 @@ export class FileUploadComponent {
         .pipe(finalize(() => this.reset()));
 
       this.uploadSub = upload$.subscribe((event) => {
-        if (event.type == HttpEventType.UploadProgress) {
-          this.uploadProgress = Math.round(100 * (event.loaded / event.total));
-        }
+        // if (event.type == HttpEventType.UploadProgress) {
+        // //   this.uploadProgress = Math.round(100 * (event.loaded / event.total));
+        // }
       });
     }
   }
